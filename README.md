@@ -1,8 +1,8 @@
 ## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
-## DATE :
-## NAME :																			             
-## ROLLNUMBER :
-## DEPARTMENT 
+## DATE :15:02:2024
+## NAME :Hema Dharshini N																			             
+## ROLLNUMBER :212223220034
+## DEPARTMENT : Information Technology
 
 
 ## AIM:
@@ -51,7 +51,6 @@ FIGURE-02
 
 ## CIRCUIT DIAGRAM 
 
-
 ![image](https://user-images.githubusercontent.com/36288975/163530437-87a0afbd-b3c9-44ad-b907-5de63486fb9d.png)
 
 
@@ -62,24 +61,38 @@ FIGURE -03
 
 
 ## PROGRAM 
+ // C++ code
+//
+int led=4;
+int pushbutton=3;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(pushbutton, INPUT);
+}
+
+void loop()
+{
+  int pb;
+  pb=digitalRead(pushbutton);
+   if(pb==HIGH)
+   {
+  digitalWrite(led, HIGH);
+  delay(500); 
+  digitalWrite(led, LOW);
+  delay(led); 
+}
+   else
+   {
+     delay(500);
+     digitalWrite(led,LOW);
+   }
+}
  
- 
-
-
-
-
-
-
-
-
-
- 
- 
- 
-
-
-
 ## OUTPUT OF SIMULATION :
 
-[My image](username.github.com/repository/img/image.jpg)
+![Screenshot 2024-02-15 054616](https://github.com/hema-dharshini5/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/147117728/e3967093-b88c-4577-ab24-31dcbb760a7c)
+![Screenshot 2024-02-15 054904](https://github.com/hema-dharshini5/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/147117728/348e9b0b-e915-4aa2-9c9a-d0f5c2998506)
+
+
 
