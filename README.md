@@ -62,6 +62,7 @@ FIGURE -03
 
 
 ## PROGRAM 
+```
  // C++ code
 //
 int led=4;
@@ -89,11 +90,15 @@ void loop()
      digitalWrite(led,LOW);
    }
 }
+```
  
 ## OUTPUT OF SIMULATION :
 
 ![Screenshot 2024-02-15 054616](https://github.com/hema-dharshini5/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/147117728/e3967093-b88c-4577-ab24-31dcbb760a7c)
 
 
+## RESULT :
+
+Thus, we have interfaced a digital input (push button) and blink of LED upon activation.
 
 
